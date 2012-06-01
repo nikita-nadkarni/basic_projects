@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content%}
+<h5>
+	Books:
+</h5>
+{% for book in book_list %}
+	<p>Book Name: {{book.name}}   Length:{{book.len}} Type: {{book.type}} </p>
+{% endfor %}
+
+{% endblock %}
